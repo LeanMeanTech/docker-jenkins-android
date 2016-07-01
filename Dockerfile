@@ -37,3 +37,5 @@ RUN echo y | android update sdk --no-ui --all --filter "${ANDROID_COMPONENTS}" ;
 ENV TERM dumb
 
 USER jenkins
+
+RUN install-plugins.sh git slack 
